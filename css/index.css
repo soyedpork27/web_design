@@ -1,0 +1,42 @@
+header {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #ccc;
+}
+
+.ctnt {
+  width: 1200px;
+  margin: 50px auto;
+}
+.ctnt .ctnt-title {
+  margin-top: 32px;
+  height: 80px;
+  line-height: 80px;
+  background-color: #FF8686;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  text-indent: 10px;
+}
+.ctnt .ctnt-link {
+  height: 50px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.ctnt .ctnt-link a {
+  display: block;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  text-indent: 16px;
+  line-height: 50px;
+}/*# sourceMappingURL=index.css.map */

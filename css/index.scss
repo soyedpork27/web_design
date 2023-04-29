@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+
+header {
+  width : 100%;
+  height : 150px;
+  text-align : center;
+  display : flex;
+  align-items : center;
+  justify-content: center;
+}
+
+body {
+  background-color : #ccc;
+}
+
+
+// 제목 높이, 제목 배경색, 제목 글자 색, 링크 높이, 링크 배경색, 링크 글자 색
+@mixin ctnt($t-height, $t-bgCol, $t-col, $link_height, $link_bgCol, $link_col){
+
+
+  width : 1200px;
+  margin : 50px auto;
+
+  .ctnt-title{
+    margin-top : 32px;
+    height : $t-height;
+    line-height : $t-height;
+    background-color : $t-bgCol;
+    border-top : 3px solid #333;
+    border-bottom : 3px solid #333;
+    color : $t-col;
+    font-size : 20px;
+    font-weight : bold;
+    text-indent : 10px;
+  }
+
+  .ctnt-link{
+    height : $link-height;
+    border-top : 1px solid #000;
+    border-bottom : 1px solid #000;
+  }
+  .ctnt-link a{
+    display : block;
+    height : 100%;
+    background-color : $link-bgCol;
+    color : $link-col;
+    text-indent : 16px;
+    line-height : $link-height;
+  }
+}
+
+.ctnt {
+  // 제목 높이, 제목 배경색, 제목 글자 색, 링크 높이, 링크 배경색, 링크 글자 색
+  @include ctnt(80px, #FF8686, #333, 50px, #000, #fff);
+}
